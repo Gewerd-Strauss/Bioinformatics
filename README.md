@@ -38,3 +38,6 @@ You can click on the links below to directly view the HTML presentations.
 
 
 
+
+
+Branch Forked and updated from original repo by user january3 who lectured this course during the Summer term of 2021 at Rhine Waal University of Applied Sciences. Thank you for this amazing course :)
