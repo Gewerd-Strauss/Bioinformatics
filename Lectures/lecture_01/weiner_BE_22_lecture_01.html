@@ -4,9 +4,9 @@
     <title>Lecture 1: What is bioinformatics?</title>
     <meta charset="utf-8" />
     <meta name="author" content="January Weiner" />
-    <meta name="date" content="2021-03-31" />
-    <script src="libs/header-attrs-2.6/header-attrs.js"></script>
-    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <meta name="date" content="2022-03-24" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link rel="stylesheet" href="files/cubi-fonts.css" type="text/css" />
     <link rel="stylesheet" href="files/style.css" type="text/css" />
   </head>
@@ -15,9 +15,9 @@
 class: center, middle, inverse, title-slide
 
 # Lecture 1: What is bioinformatics?
-## BE_22 Bioinformatics SS 21
+## BE_22 Bioinformatics SS 22
 ### January Weiner
-### 2021-03-31
+### 2022-03-24
 
 ---
 
@@ -85,6 +85,7 @@ Coursera?
  * Generated from Rmarkdown
  * You will find a ZIP archive with the lecture files, including the
    Rmarkdown
+ * Better: use github [https://github.com/january3/Bioinformatics](https://github.com/january3/Bioinformatics)
  * Unzip the file and open in a browser (Chrome or Firefox preferred)
  * See [keyboard shortcuts](https://bookdown.org/yihui/rmarkdown/xaringan-key.html)
  * Important slides / concepts marked with ✪
@@ -93,14 +94,11 @@ Coursera?
 
 ## Course evaluation ✪
 
- * Homeworks (short and easy) 30%
+ * Homeworks (short and easy) 30% = 6 x 5%
  * Report ("paper") 30%
  * Exam (multiple choice) 40%
 
 Rule #1: no plagiarism
-
-
-*Final information TBA*
 
 ---
 
@@ -109,7 +107,7 @@ Rule #1: no plagiarism
  1. Ask questions.
 --
 
- 2. **ASK** questions.
+ 2. Do **ASK** questions.
 --
 
  3. Take notes, don't rely on lecture materials.
@@ -493,9 +491,14 @@ Scientist is a person who reads *and writes* scientific papers.
    results while they are discussed
  * If you want to *cite* a paper, you *must* read it in whole
 
+---
+
+## Important ('s why I use CAPSLOCK)
+
  * **DON'T TAKE THE AUTHORS BY THEIR WORD!** Try to find their errors /
    mistakes / omissions, ask "what if", or even "they must be joking"
  * **BE CAREFUL OF PRE-PRINTS, HERE BE DRAGONS**
+ * **EVEN A NATURE PAPER MAY BE WRONG!**
 
 
 ![](images/watsoncrick.png)
@@ -520,9 +523,9 @@ Scientist is a person who reads *and writes* scientific papers.
 
  1. Biomarkers of tuberculosis (TB) progression
 
- 2. Functional analysis in a vaccine trial
+ 2. Genetic background in severe COVID-19
 
- 3. Genetic background in severe COVID-19
+ 3. How Venn diagrams mislead scientists
 
 ---
 
@@ -553,10 +556,9 @@ background-image:url(images/study_scheme.png)
 
 Go to [manuscript](https://www.nature.com/articles/s41467-018-07635-7)
 
-
 ---
 
-## 2. Transcriptomic responses in vaccination
+## 4. Transcriptomic responses in vaccination
 
 ---
 class:empty-slide,mywhite
@@ -621,8 +623,51 @@ clinical trials conducted by the BIOVACSAFE consortium." Scientific reports
 
 ---
 
+## How Venn diagrams can fool scientists
 
-## 3. HLAs and COVID-19 severity
+![](images/fig1-1.jpeg)
+
+
+.footnote[*Venn diagrams may indicate erroneous statistical reasoning in
+transcriptomics. Weiner, Obermayer and Beule, 2022, Frontiers Genetics, in press*]
+
+---
+
+## What happens is, we are comparing significance with non-significance
+
+&gt; The Difference Between “Significant” and “Not Significant” is not
+&gt; Itself Statistically Significant
+
+   - Andrew Gelman and Howard Stern
+
+(we will talk more about significance and lack of significance later!)
+
+---
+
+Nieuwenhuis et al. found that half of the scientists who could have
+commited this error, did in fact commit this error.
+
+![](images/erroneous_analyses.webp)
+
+.footnote[*Nieuwenhuis, Sander, Birte U. Forstmann, and Eric-Jan
+Wagenmakers. "Erroneous analyses of interactions in neuroscience: a problem
+of significance." Nature neuroscience 14.9 (2011): 1105-1107.*]
+
+
+---
+
+## The results are artifacts!
+
+Groups G1 and G2 were randomly drawn from the same population. They were
+not different at all!
+
+![:scale 80%](images/fig2-1.jpeg)
+
+
+
+---
+
+## 4. HLAs and COVID-19 severity
 
 ---
 
@@ -671,15 +716,16 @@ Sounds straightforward:
  * Determine their HLA alleles
  * Compare with who has been intubated and who was not
 
-.footnote[*Weiner, J. et al. "HLA-C 04: 01 is a Genetic Risk Allele for Severe Course of COVID-19." medRxiv (2020).*]
-
+.footnote[*Weiner 3rd, January, et al. "Increased risk of severe clinical course of COVID-19 in carriers of HLA-C 04: 01." EClinicalMedicine 40 (2021): 101099.*] 
 ---
 
 ## Example of a real world study: HLAs and Covid
 
 ![](images/hlac0401_associations_2-1.png)
 
-.footnote[*Weiner, J. et al. "HLA-C 04: 01 is a Genetic Risk Allele for Severe Course of COVID-19." medRxiv (2020).*]
+.footnote[*Weiner 3rd, January, et al. "Increased risk of severe clinical
+course of COVID-19 in carriers of HLA-C 04: 01." EClinicalMedicine 40
+(2021): 101099.*]
 
 ---
 
@@ -687,7 +733,9 @@ Sounds straightforward:
 
 ![](images/ethnicity_ds3_freq-1.png)
 
-.footnote[*Weiner, J. et al. "HLA-C 04: 01 is a Genetic Risk Allele for Severe Course of COVID-19." medRxiv (2020).*]
+.footnote[*Weiner 3rd, January, et al. "Increased risk of severe clinical
+course of COVID-19 in carriers of HLA-C 04: 01." EClinicalMedicine 40
+(2021): 101099.*]
 
 ---
 
@@ -733,6 +781,32 @@ RCT:
  - Fisher published his book in 1935
  - Ethics: streptomycin was scarce anyway
 
+[@nieuwenhuis2011erroneous]
+
+---
+
+
+
+# References
+
+&lt;a name=bib-bmc1948streptomycin&gt;&lt;/a&gt;[Streptomycin treatment of pulmonary tuberculosis](#cite-bmc1948streptomycin) (1948). "Streptomycin treatment of
+pulmonary tuberculosis". In: _British Medical Journal_ 2, pp. 769-782.
+
+&lt;a name=bib-gelman2006difference&gt;&lt;/a&gt;[Gelman, A. and H. Stern](#cite-gelman2006difference) (2006). "The difference between “significant” and “not
+significant” is not itself statistically significant". In: _The American Statistician_ 60.4, pp. 328-331.
+
+&lt;a name=bib-nieuwenhuis2011erroneous&gt;&lt;/a&gt;[Nieuwenhuis, S., B. U. Forstmann, and E. Wagenmakers](#cite-nieuwenhuis2011erroneous) (2011). "Erroneous
+analyses of interactions in neuroscience: a problem of significance". In: _Nature neuroscience_ 14.9, pp. 1105-1107.
+
+&lt;a name=bib-weiner2021increased&gt;&lt;/a&gt;[Weiner 3rd, J., P. Suwalski, M. Holtgrewe, et al.](#cite-weiner2021increased) (2021). "Increased risk of severe
+clinical course of COVID-19 in carriers of HLA-C* 04: 01". In: _EClinicalMedicine_ 40, p. 101099.
+
+&lt;a name=bib-weiner2019characterization&gt;&lt;/a&gt;[Weiner, J., D. J. Lewis, J. Maertzdorf, et al.](#cite-weiner2019characterization) (2019). "Characterization
+of potential biomarkers of reactogenicity of licensed antiviral vaccines: randomized controlled clinical trials conducted by the BIOVACSAFE consortium".
+In: _Scientific reports_ 9.1, pp. 1-14.
+
+&lt;a name=bib-weiner2018metabolite&gt;&lt;/a&gt;[Weiner, J., J. Maertzdorf, J. S. Sutherland, et al.](#cite-weiner2018metabolite) (2018). "Metabolite changes in
+blood predict the onset of tuberculosis". In: _Nature communications_ 9.1, pp. 1-12.
 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
